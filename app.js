@@ -82,4 +82,26 @@ for (let i = 0; i < teamList.length; i++) {
 console.log(teamListNew);
 
 
+//Snack 3 - BONUS
+
+const nums = [1, 3, 8, 66, 54, 2, 12, 8, 9, 3, 0];
+const minNum = 0, maxNum = 10;
+
+function checkNumsBetween(list, min, max) {
+    let newList = []
+    for (let i = 0; i < list.length; i++) {
+        if (list[i] < max && list[i] > min) {
+            newList.push(list[i]);
+        }
+    }
+    return newList;
+}
+
+const numsBetween = checkNumsBetween(nums, minNum, maxNum);
+
+console.log(`I numeri compresi tra ${minNum} e ${maxNum} sono: ${numsBetween}`);
+
+
+
+
 
